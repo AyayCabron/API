@@ -1,0 +1,258 @@
+/* Estilos Gerais do Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa; /* Um cinza claro suave */
+    color: #343a40; /* Texto escuro para contraste */
+    line-height: 1.6;
+}
+
+/* Estilo do Título Principal */
+h1 {
+    color: #007bff; /* Um azul vibrante */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Container para a página inicial */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+}
+
+.container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilo para a div que agrupa os botões na home */
+.home-buttons {
+    display: flex; /* Para colocar os botões lado a lado */
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 30px;
+}
+
+/* Estilo base para os botões da página inicial */
+.btn-home {
+    display: inline-block; /* Permite que estejam lado a lado */
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo específico para o botão "Ver Clientes Cadastrados" (azul) */
+.btn-home {
+    background-color: #007bff; /* Azul primário */
+    color: #ffffff;
+}
+
+.btn-home:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilo específico para o botão "Adicionar Novo Cliente" (verde) */
+.btn-home.btn-primary { /* Mais específico para garantir que sobrescreva .btn-home */
+    background-color: #28a745; /* Verde de sucesso */
+    color: #ffffff;
+}
+
+.btn-home.btn-primary:hover {
+    background-color: #218838; /* Verde mais escuro no hover */
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+}
+
+/* Remove os estilos padrão de lista se não for mais usar */
+ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para o LINK "Adicionar Novo Cliente" (usando a CLASSE) - Mantido para referência*/
+/* (Mantenha este estilo se for usado em outras páginas, como a lista de clientes) */
+.btn-add-client {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 30px auto;
+    background-color: #28a745; /* Um verde atraente */
+    color: #ffffff; /* Texto branco */
+    padding: 12px 25px; /* Preenchimento interno generoso */
+    border-radius: 8px; /* Cantos mais arredondados */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    font-weight: 600; /* Deixa o texto mais encorpado */
+    font-size: 1.1em; /* Tamanho da fonte ligeiramente maior */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2); /* Sombra suave */
+    text-align: center; /* Garante que o texto dentro do botão esteja centralizado */
+}
+
+.btn-add-client:hover {
+    background-color: #218838; /* Um verde um pouco mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito sutil de "levantar" */
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3); /* Sombra mais intensa no hover */
+}
+
+
+/* Estilo da Tabela de Clientes - Mantido para referência */
+table {
+    width: 90%;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilo do Cabeçalho da Tabela - Mantido para referência */
+thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+}
+
+/* Estilo para Linhas da Tabela (zebra-striping) - Mantido para referência */
+tbody tr:nth-child(even) {
+    background-color: #f2f6fa;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Estilo para "Nenhum cliente encontrado" - Mantido para referência */
+p {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+/* NOVOS ESTILOS PARA O FORMULÁRIO DE ADIÇÃO DE CLIENTE - Mantido para referência */
+/* Estilo do Formulário */
+form {
+    width: 90%; /* Mesma largura da tabela para consistência */
+    max-width: 500px; /* Limita a largura máxima para formulários em telas grandes */
+    margin: 0 auto 30px auto; /* Centraliza e adiciona margem inferior */
+    padding: 30px; /* Mais preenchimento interno */
+    background-color: #ffffff; /* Fundo branco, igual à tabela */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Sombra suave, igual à tabela */
+    display: flex; /* Para organizar labels e inputs */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    gap: 15px; /* Espaçamento entre os elementos do formulário */
+}
+
+/* Estilo para os Rótulos (Labels) */
+label {
+    font-weight: 600; /* Deixa o texto do rótulo mais encorpado */
+    color: #343a40; /* Mesma cor de texto principal */
+    margin-bottom: 5px; /* Pequena margem abaixo do rótulo */
+}
+
+/* Estilo para os Campos de Entrada (Input text e email) */
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Ocupa a largura total do contêiner */
+    padding: 12px; /* Preenchimento interno */
+    border: 1px solid #ced4da; /* Borda suave */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1em; /* Tamanho da fonte */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição para foco */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff; /* Borda azul ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra de foco azul */
+}
+
+/* Estilo para o Botão de Submit */
+input[type="submit"] {
+    display: block; /* Faz o botão ocupar sua própria linha */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    margin: 20px auto 0 auto; /* Centraliza horizontalmente e adiciona margem superior */
+    background-color: #007bff; /* Azul vibrante, como o cabeçalho da tabela */
+    color: #ffffff; /* Texto branco */
+    padding: 12px 30px; /* Preenchimento generoso */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1.1em; /* Tamanho da fonte ligeiramente maior */
+    font-weight: 600; /* Texto mais encorpado */
+    cursor: pointer; /* Muda o cursor para indicar clicável */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra suave */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito sutil de "levantar" */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Sombra mais intensa no hover */
+}
+
+/* Responsividade Básica para telas menores */
+@media (max-width: 768px) {
+    table, form { /* Aplica responsividade tanto à tabela quanto ao formulário */
+        width: 100%;
+        display: block;
+        overflow-x: auto; /* Permite rolagem horizontal em telas pequenas */
+    }
+
+    th, td {
+        white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px; /* Reduz o preenchimento em telas menores */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Botão ocupa a largura total em telas pequenas */
+    }
+
+    .home-buttons {
+        flex-direction: column; /* Botões empilham em telas pequenas */
+    }
+
+    .btn-home {
+        width: 100%; /* Botões ocupam largura total em telas pequenas */
+    }
+}

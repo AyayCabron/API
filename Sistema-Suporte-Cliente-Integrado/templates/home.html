@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Sistema de Suporte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Sistema de Suporte ao Cliente</h1>
+        <p>Use os links abaixo para navegar:</p>
+        <div class="home-buttons">
+            <a href="/clientes" class="btn-home">Ver Clientes Cadastrados</a>
+            <a href="/adicionar_cliente" class="btn-home btn-primary">Adicionar Novo Cliente</a>
+        </div>
+    </div>
+</body>
+</html>
